@@ -7,9 +7,9 @@ package sorting;
  * The Insertion Sort algorithm in JAVA
  * 
  * Cost of the implementation:
- * - Insertion:
- * - Search:
- * - Sorting:
+ * - Insertion: O(n)
+ * - Time sorting: O(n^2)
+ * - Space Sorting: O(n) + O(1) auxiliary variable
  * 
  */
 public class InsertionSort {
