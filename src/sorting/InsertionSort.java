@@ -16,22 +16,21 @@ public class InsertionSort {
 	
 	
     public static int[] sort(int n, int[] arr) {
-        int elem = arr[n-1];
-        if (n > 1){
-            int i= n-2;
+    	for (int j=1; j< n; j++){
+            int elem = arr[j];
+            int i = j-1;
             while (i>=0){
                 if (arr[i] <= elem){
                     arr[i+1] = elem;
                     break;
                 }
-                else{
+                else
                     arr[i+1] = arr[i];
-                }
                 i--;
             }
             if (i == -1)
                 arr[0] = elem; 
         }
-        return arr;
+    	return arr;
     }
 }

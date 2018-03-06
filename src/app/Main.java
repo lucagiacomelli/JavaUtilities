@@ -2,6 +2,7 @@ package app;
 import java.util.Date;
 
 import sorting.InsertionSort;
+import sorting.QuickSort;
 import time.DateTimeUtils;
 
 public class Main {
@@ -32,12 +33,15 @@ public class Main {
 			
 			System.out.println("--- Sorting Algorithms ---");
 			
-			int[] arr = {2, 4, 6, 8, 3};
+			int[] arr = {4, 2, 6, 8, 3};
 			int n = arr.length;
-			int[] sortedArray = InsertionSort.sort(n,arr);
-		    
+			int[] sortedArray = new int[arr.length];
+			sortedArray = InsertionSort.sort(n,arr);
 			printArray(sortedArray);
 			
+			sortedArray = new int[arr.length];
+			sortedArray = QuickSort.sort(arr, 0, arr.length-1);
+			printArray(sortedArray);
 	}
 
 }
